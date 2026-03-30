@@ -1,11 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Himanshu Singh | Portfolio</title>
 </head>
-<body>
-    <h1>MY PORTFOLIO</h1>
+
+<body data-theme="dark">
+    <nav>
+        <div class="left">
+            <a href="#">HIMANSHU SINGH</a>
+        </div>
+        <div class="right">
+            <a href="https://github.com/himanshusinghgkp08" target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
+            <a href="http://www.linkedin.com/in/himanshusingh0809" target="_blank"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+            <a href="#contact" class="btn-contact">Let's Connect</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="text">
+                <h1>Hi, I'm <span>Himanshu</span></h1>
+                <p>
+                    A Computer Science undergraduate skilled in <strong> C, C++, Python, JAVA, and Full Stack Development.</strong> Strong foundation in Data Structures & Algorithms, OOPs, and DBMS. Passionate about building real-world applications, solving problems, and continuously learning in collaborative environments.
+                </p>
+                <div class="links">
+                    <a href="Himanshu Singh.pdf" download class="primary-link">
+                        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                    </a>
+                    <a href="#projects">View Projects</a>
+                    <a href="#skills">Toolkit</a>
+                </div>
+            </div>
+            <div class="headshot">
+                <img src="IMG_6172.jpg" alt="Himanshu Singh" onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400'">
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="reveal">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+            <div class="glass-card">
+                <span class="card-tag">University</span>
+                <h3>Pranveer Singh Institute of Technology, Kanpur</h3>
+                <span class="date">Sep 2024 — Present</span>
+                <p>B.Tech in Computer Science and Engineering</p>
+                <p style="color: var(--primary); font-weight: 700; margin-top: 10px; font-size: 1.1rem;">CGPA: 8.6 / 10</p>
+            </div>
+        </section>
+
+        <!-- Projects & Experience -->
+        <section id="projects" class="reveal">
+            <h2><i class="fa-solid fa-laptop-code"></i> Projects</h2>
+            <div class="glass-card" style="margin-bottom: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                    <div>
+                        <span class="card-tag">Team Leader</span>
+                        <h3>HealthLink: Digital Healthcare Management</h3>
+                        <span class="date">2025 — Present</span>
+                    </div>
+                </div>
+                <p style="margin-top: 15px; color: var(--text-muted);">
+                    Developed a digital healthcare management system to help users find nearby healthcare facilities using location-based search. Implemented <strong>user authentication</strong> and role-based access control for secure data handling. <strong>Built interactive UI using JavaScript </strong>and followed modular, object-oriented design principles.
+                </p>
+            </div>
+
+            <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+            <div class="grid-layout">
+                <div class="glass-card">
+                    <span class="card-tag">Leadership</span>
+                    <h3>President</h3>
+                    <p style="font-weight: 600;">The Navrang Club, PSIT</p>
+                    <p class="details" style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">
+                        Managing end-to-end planning of cultural and technical events. Mentoring 50+ members and collaborating with faculty to ensure seamless operations.
+                    </p>
+                </div>
+                <div class="glass-card">
+                    <span class="card-tag">Outreach</span>
+                    <h3>Campus Ambassador</h3>
+                    <p style="font-weight: 600;">Techfest, IIT Bombay</p>
+                    <p class="details" style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">
+                        Coordinating digital outreach and promoting workshops to increase student engagement in one of Asia's largest technical festivals.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="reveal">
+            <h2><i class="fa-solid fa-layer-group"></i> Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+                <div class="skill-item"><i class="devicon-java-plain colored"></i><span>JAVA</span></div>
+                <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            </div>
+            
+            <h3 style="margin-top: 40px; margin-bottom: 20px;">Core CS & Tools</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <span class="card-tag" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border);">Data Structures</span>
+                <span class="card-tag" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border);">Algorithms</span>
+                <span class="card-tag" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border);">OOP</span>
+                <span class="card-tag" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border);">DBMS</span>
+                <!-- <span class="card-tag" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border);">Software Engineering</span> -->
+                <span class="card-tag" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border);">VS Code</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <div class="contact-box">
+                <div>
+                    <h2>Ready to Talk?</h2>
+                    <p style="color: var(--text-muted);">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <p><i class="fa-solid fa-envelope" style="color: var(--primary);"></i> himanshusinghgkp.08@gmail.com</p>
+                        <p><i class="fa-solid fa-phone" style="color: var(--primary);"></i> +91 9336426844</p>
+                    </div>
+                </div>
+                <form onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="e.g. John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="e.g. john@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea rows="4" placeholder="How can I help you?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Himanshu Singh. Developed with Passion.</p>
+    </footer>
+
+    <script>
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+        body.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('portfolio-theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'light') {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+
+        // Smooth scroll reveal observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Skill staggering animation
+        document.querySelectorAll('.skill-item').forEach((item, index) => {
+            item.style.transitionDelay = `${index * 50}ms`;
+        });
+    </script>
 </body>
+
 </html>
